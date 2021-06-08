@@ -22,6 +22,7 @@ files = files[:1]   # Skærer files-listen af til en enkelt fil mens der testes.
                     #  Fjern for at løbe gennem alle filer
 
 
+
 # %% Loop, som indlæser filerne
 for filename in files:
     print(f'Opening {filename}')   
@@ -36,5 +37,5 @@ for filename in files:
     
 
 print('done')
-# print(f'Search over after {datetime.datetime.now() - begin_time}')
+print(f'Search over after {datetime.datetime.now() - begin_time}')
 # %%
