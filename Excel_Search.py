@@ -4,7 +4,7 @@ import numpy as np;
 import os;
 import datetime;
 
-begin_time = datetime.now()
+# begin_time = datetime.now()
 
 
 print('Searching...')
@@ -18,9 +18,8 @@ for root, dir, file in os.walk('.'):
     for name in file:
       files.append(os.path.join(root, name))
       
-files = files[:1]   # Skærer files-listen af til en enkelt fil mens der testes. 
+files = files[:3]   # Skærer files-listen af til en enkelt fil mens der testes. 
                     #  Fjern for at løbe gennem alle filer
-
 
 
 # %% Loop, som indlæser filerne
@@ -33,9 +32,9 @@ for filename in files:
           '---------------\n',
     npdf[11,1],'\t\t: ',npdf[11,6],'\n',  # E-Sarbeco F1
     npdf[12,1],'\t\t: ',npdf[12,6],'\n',  # E-Sarbeco R2
-    npdf[13,1],'\t: ',npdf[13,6])  # E-Sarbeco P1
+    npdf[13,1],'\t: ',npdf[13,6],'\n')  # E-Sarbeco P1
     
 
 print('done')
-print(f'Search over after {datetime.datetime.now() - begin_time}')
+# print(f'Search over after {datetime.datetime.now() - begin_time}')
 # %%
